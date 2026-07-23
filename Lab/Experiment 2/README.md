@@ -1,4 +1,4 @@
-## Experiment: 8-Queen Problem Using Python
+## Experiment 2: 8-Queen Problem Using Python
 
 ## Aim
 
