@@ -1,4 +1,4 @@
-# Experiment:3 Water Jug Problem Using Python
+# Experiment 3: Water Jug Problem Using Python
 
 ## Aim
 
