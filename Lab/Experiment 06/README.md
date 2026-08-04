@@ -81,6 +81,8 @@ Action: Clean B
 
 All rooms are clean.
 ```
+<img width="1357" height="762" alt="image" src="https://github.com/user-attachments/assets/1fe88a6e-7ef3-4aee-9ed2-30809949430e" />
+
 
 ## Result
 
