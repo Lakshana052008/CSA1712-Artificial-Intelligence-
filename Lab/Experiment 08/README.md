@@ -50,17 +50,27 @@ graph = {
 }
 
 visited = set()
+traversal = []
 
 def dfs(node):
     if node not in visited:
-        print(node, end=" ")
         visited.add(node)
+        traversal.append(node)
 
-        for neighbor in graph[node]:
-            dfs(neighbor)
+        for neighbour in graph[node]:
+            dfs(neighbour)
 
-print("DFS Traversal:")
-dfs('A')
+start = 'A'
+dfs(start)
+
+print("DFS Traversal")
+print()
+print("Starting Node :", start)
+print()
+print("Traversal Order:")
+print(" → ".join(traversal))
+print()
+print("Traversal Completed Successfully.")
 ```
 
 ## Output
@@ -75,6 +85,8 @@ A → B → D → E → F → C
 
 Traversal Completed Successfully.
 ```
+<img width="1387" height="786" alt="image" src="https://github.com/user-attachments/assets/d85bab46-074d-4fcd-bb91-07d7ef073130" />
+
 
 ## Result
 
