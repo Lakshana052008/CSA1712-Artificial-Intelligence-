@@ -69,6 +69,8 @@ SEND = 9567
 MORE = 1085
 MONEY = 10652
 ```
+<img width="1357" height="677" alt="image" src="https://github.com/user-attachments/assets/90afc5f1-2720-4cc0-9528-28eb4b9c3a6f" />
+
 
 ## Result
 
