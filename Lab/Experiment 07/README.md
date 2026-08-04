@@ -41,32 +41,44 @@ flowchart TD
 ```python
 from collections import deque
 
+def bfs(graph, start):
+    visited = set()
+    queue = deque([start])
+    traversal = []
+
+    while queue:
+        node = queue.popleft()
+
+        if node not in visited:
+            visited.add(node)
+            traversal.append(node)
+
+            for neighbour in graph[node]:
+                if neighbour not in visited:
+                    queue.append(neighbour)
+
+    return traversal
+
 graph = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
     'C': ['F'],
     'D': [],
-    'E': ['F'],
+    'E': [],
     'F': []
 }
 
-visited = set()
-queue = deque()
-
 start = 'A'
-visited.add(start)
-queue.append(start)
+result = bfs(graph, start)
 
-print("BFS Traversal:")
-
-while queue:
-    vertex = queue.popleft()
-    print(vertex, end=" ")
-
-    for neighbor in graph[vertex]:
-        if neighbor not in visited:
-            visited.add(neighbor)
-            queue.append(neighbor)
+print("BFS Traversal")
+print()
+print("Starting Node :", start)
+print()
+print("Traversal Order:")
+print(" → ".join(result))
+print()
+print("Traversal Completed Successfully.")
 ```
 
 ## Output
@@ -81,6 +93,8 @@ A → B → C → D → E → F
 
 Traversal Completed Successfully.
 ```
+<img width="1232" height="767" alt="image" src="https://github.com/user-attachments/assets/f71debd0-8109-4cef-a2d3-0b7cabdb3cce" />
+
 
 ## Result
 
