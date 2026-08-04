@@ -109,6 +109,8 @@ Solution Path:
 (1, 1, 1)
 (0, 0, 0)
 ```
+<img width="1185" height="835" alt="image" src="https://github.com/user-attachments/assets/d64e71a6-bb04-4bda-8304-b39beb5ede78" />
+
 
 ## Result
 
