@@ -96,15 +96,16 @@ else:
 ```text
 Solution Found:
 
-1 0 0 0 0 0 0 0
-0 0 0 0 1 0 0 0
-0 0 0 0 0 0 0 1
-0 0 0 0 0 1 0 0
-0 0 1 0 0 0 0 0
-0 0 0 0 0 0 1 0
-0 1 0 0 0 0 0 0
-0 0 0 1 0 0 0 0
+Q 0 0 0 0 0 0 0
+0 0 0 0 Q 0 0 0
+0 0 0 0 0 0 0 Q
+0 0 0 0 0 Q 0 0
+0 0 Q 0 0 0 0 0
+0 0 0 0 0 0 Q 0
+0 Q 0 0 0 0 0 0
+0 0 0 Q 0 0 0 0
 ```
+<img width="1097" height="752" alt="image" src="https://github.com/user-attachments/assets/b0959511-e5d8-42a3-8296-f1cfade09148" />
 
 ## Result
 
