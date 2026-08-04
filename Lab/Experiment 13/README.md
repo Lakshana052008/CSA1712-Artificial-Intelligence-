@@ -87,6 +87,8 @@ print("The optimal value is:", result)
 ```text
 The optimal value is: 5
 ```
+<img width="1372" height="782" alt="image" src="https://github.com/user-attachments/assets/6696a064-f139-4116-bcb2-a6f26158ace0" />
+
 
 ## Result
 
