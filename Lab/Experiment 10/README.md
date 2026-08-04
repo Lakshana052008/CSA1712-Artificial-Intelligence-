@@ -128,6 +128,8 @@ else:
 Shortest Path: A -> B -> D -> G
 Total Cost: 6
 ```
+<img width="1445" height="840" alt="image" src="https://github.com/user-attachments/assets/d4254931-28e1-474e-a961-28272690040e" />
+
 
 ## Result
 
