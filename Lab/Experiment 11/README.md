@@ -107,6 +107,8 @@ B : Green
 C : Blue
 D : Green
 ```
+<img width="1391" height="795" alt="image" src="https://github.com/user-attachments/assets/0faf15eb-0d6f-4a69-a51e-ab98b6dc5e93" />
+
 
 ## Result
 
