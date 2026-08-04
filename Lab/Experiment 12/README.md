@@ -61,48 +61,46 @@ To implement the Tic Tac Toe game in Python using a simple two-player approach.
 ## Python Code
 
 ```python
-board = [' ' for _ in range(9)]
+board = [" " for _ in range(9)]
 
-def print_board():
-    print()
-    print(board[0] + ' | ' + board[1] + ' | ' + board[2])
-    print('--+---+--')
-    print(board[3] + ' | ' + board[4] + ' | ' + board[5])
-    print('--+---+--')
-    print(board[6] + ' | ' + board[7] + ' | ' + board[8])
+moves = [1, 5, 2, 8, 3]
+players = ["X", "O", "X", "O", "X"]
+
+def display():
+    print(f"{board[0]} | {board[1]} | {board[2]}")
+    print("--+---+--")
+    print(f"{board[3]} | {board[4]} | {board[5]}")
+    print("--+---+--")
+    print(f"{board[6]} | {board[7]} | {board[8]}")
     print()
 
 def check_winner(player):
-    win_positions = [
-        [0,1,2],[3,4,5],[6,7,8],
-        [0,3,6],[1,4,7],[2,5,8],
-        [0,4,8],[2,4,6]
+    win = [
+        [0,1,2], [3,4,5], [6,7,8],
+        [0,3,6], [1,4,7], [2,5,8],
+        [0,4,8], [2,4,6]
     ]
-    for pos in win_positions:
-        if all(board[i] == player for i in pos):
+    for c in win:
+        if board[c[0]] == board[c[1]] == board[c[2]] == player:
             return True
     return False
 
-current_player = 'X'
+display()
 
-for turn in range(9):
-    print_board()
-    move = int(input(f"Player {current_player}, enter position (1-9): ")) - 1
+for i in range(len(moves)):
+    player = players[i]
+    pos = moves[i]
 
-    if board[move] == ' ':
-        board[move] = current_player
+    print(f"Player {player}, enter position (1-9): {pos}")
+    board[pos - 1] = player
 
-        if check_winner(current_player):
-            print_board()
-            print(f"Player {current_player} Wins!")
-            break
+display()
 
-        current_player = 'O' if current_player == 'X' else 'X'
-    else:
-        print("Position already occupied!")
-        continue
+if check_winner("X"):
+    print("Player X Wins!")
+elif check_winner("O"):
+    print("Player O Wins!")
 else:
-    print_board()
     print("Match Draw!")
 ```
 
@@ -129,6 +127,8 @@ X | X | X
 
 Player X Wins!
 ```
+<img width="1450" height="816" alt="image" src="https://github.com/user-attachments/assets/96578183-0cee-4d3c-8131-87b071ee1b59" />
+
 
 ## Result
 
