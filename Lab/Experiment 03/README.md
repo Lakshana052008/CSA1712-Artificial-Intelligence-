@@ -98,6 +98,8 @@ Solution Found:
 (3, 3)
 (4, 2)
 ```
+<img width="1322" height="840" alt="image" src="https://github.com/user-attachments/assets/d681cc56-3889-40f2-b3d4-23fb14a3cdec" />
+
 
 ## Result
 
