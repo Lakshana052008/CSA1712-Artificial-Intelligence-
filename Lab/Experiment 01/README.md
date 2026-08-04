@@ -120,6 +120,8 @@ else:
 [4, 5, 6]
 [7, 8, 0]
 ```
+<img width="1092" height="770" alt="image" src="https://github.com/user-attachments/assets/baeee1ae-1902-49e4-87dd-52607ee7a56a" />
+
 ## Result
 
 The Python program successfully solved the 8-Puzzle problem using the Breadth-First Search (BFS) algorithm and found the shortest path from the initial state to the goal state.
