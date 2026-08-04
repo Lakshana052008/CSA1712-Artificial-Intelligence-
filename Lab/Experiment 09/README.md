@@ -47,25 +47,34 @@ graph = [
     [20, 25, 30, 0]
 ]
 
-cities = [0, 1, 2, 3]
 start = 0
+cities = [1, 2, 3]
 
 min_cost = float('inf')
-best_path = None
+best_route = []
 
-for path in permutations(cities[1:]):
-    route = (start,) + path + (start,)
-    cost = 0
+for route in permutations(cities):
+    current_cost = 0
+    current_path = [start] + list(route) + [start]
 
-    for i in range(len(route) - 1):
-        cost += graph[route[i]][route[i + 1]]
+    for i in range(len(current_path) - 1):
+        current_cost += graph[current_path[i]][current_path[i + 1]]
 
-    if cost < min_cost:
-        min_cost = cost
-        best_path = route
+    if current_cost < min_cost:
+        min_cost = current_cost
+        best_route = current_path
 
-print("Optimal Route:", best_path)
-print("Minimum Cost:", min_cost)
+print("Travelling Salesman Problem")
+print()
+print("Starting City :", start)
+print()
+print("Optimal Route:")
+print(" → ".join(map(str, best_route)))
+print()
+print("Minimum Travel Cost:")
+print(min_cost)
+print()
+print("Status: Optimal route found successfully.")
 ```
 
 ## Output
@@ -83,6 +92,8 @@ Minimum Travel Cost:
 
 Status: Optimal route found successfully.
 ```
+<img width="1331" height="840" alt="image" src="https://github.com/user-attachments/assets/7aa6573c-3a60-4ec6-a6f6-c370dd052113" />
+
 
 ## Result
 
